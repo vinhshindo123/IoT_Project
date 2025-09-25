@@ -7,7 +7,11 @@ Dự án mô phỏng ngôi nhà thông minh điều khiển tự động mở đ
 ![z7047988431307_0e1d84f08d27f9c96b6648fdfc81af7b](https://github.com/user-attachments/assets/ab0bed47-0080-464e-a1e8-8593fa8d6689)
 ## Video kết quả
 <div style="text-align: center;">
-  <video src="https://drive.google.com/file/d/1rs4GmLUvJcaIDwjhBnTvRebTb_WwTuZf/view?usp=drive_link" controls style="width: 80%; max-width: 600px;">
+  <video src="https://github.com/user-attachments/assets/9b3758ee-9040-4a98-8e8d-f9f5cb3b86ee" controls style="width: 80%; max-width: 600px;">
     Trình duyệt của bạn không hỗ trợ thẻ video.
   </video>
 </div>
+
+
+
+
