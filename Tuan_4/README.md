@@ -21,6 +21,8 @@ Dữ liệu được truyền hai chiều giữa Arduino Uno và ESP32:
 - Từ ESP32 đến Uno: ESP32 nhận lệnh điều khiển từ giao diện web (đóng/mở cửa, bật còi) và gửi các lệnh này tới Uno để thực thi.
 
 ## **Kết nối**
+![z7076475731966_1e8bdd922e31137e44324bbe955859c0](https://github.com/user-attachments/assets/9b4e61b1-2988-40f2-9020-cfa1186e78a3)
 
 
 ## **Kết quả**
+https://drive.google.com/drive/u/0/folders/1P12apuBqbcmFlyhHdIh6TfywlmrqLxuV
