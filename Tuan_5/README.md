@@ -32,18 +32,18 @@ Hệ thống được chia thành hai module chính giao tiếp với nhau qua c
 
 ## **⚙️ Hoạt động và Giao tiếp**
 1. Giao tiếp Serial (ESP32 ↔ UNO)
-MQTT → ESP32 → UNO	Dữ liệu Cảm biến	T25.5,H60.0	Cập nhật giá trị T/H từ cảm biến ngoại vi (nếu có, VD: DHT).
-MQTT → ESP32 → UNO	Lệnh Điều khiển	HOME_DOOR:ON / GARA_DOOR:OFF / GARA_LIGHT:ON	Điều khiển Servo và LED từ xa.
-UNO → ESP32 → MQTT	Trạng thái Hệ thống	L:OFF,D:LOCK,G:LOCK,M:NONE	Gửi trạng thái của Đèn (L), Cửa Nhà (D), Cửa Gara (G), Chuyển động (M) lên Cloud.
+- MQTT → ESP32 → UNO	Dữ liệu Cảm biến	T25.5,H60.0	Cập nhật giá trị T/H từ cảm biến ngoại vi (nếu có, VD: DHT).
+- MQTT → ESP32 → UNO	Lệnh Điều khiển	HOME_DOOR:ON / GARA_DOOR:OFF / GARA_LIGHT:ON	Điều khiển Servo và LED từ xa.
+- UNO → ESP32 → MQTT	Trạng thái Hệ thống	L:OFF,D:LOCK,G:LOCK,M:NONE	Gửi trạng thái của Đèn (L), Cửa Nhà (D), Cửa Gara (G), Chuyển động (M) lên Cloud.
 2. Các Topic MQTT Chính
-home/door/set	📥 Subscribe	Lệnh điều khiển Cửa Nhà (Servo 1)	ON, OFF
-home/garage/door/set	📥 Subscribe	Lệnh điều khiển Cửa Gara (Servo 2)	ON, OFF
-home/garage/light/set	📥 Subscribe	Lệnh điều khiển Đèn Gara (LED)	ON, OFF
-home/livingroom/temp_hum	📥 Subscribe	Nhận dữ liệu T/H (nếu có)	T25.5,H60.0
-home/door/status	📤 Publish	Trạng thái hiện tại của Cửa Nhà	LOCK, UNLOCK
-home/garage/door/status	📤 Publish	Trạng thái hiện tại của Cửa Gara	LOCK, UNLOCK
-home/garage/light/status	📤 Publish	Trạng thái hiện tại của Đèn Gara	ON, OFF
-home/garage/motion	📤 Publish	Trạng thái Cảm biến chuyển động	DETECT, NONE
+- home/door/set	📥 Subscribe	Lệnh điều khiển Cửa Nhà (Servo 1)	ON, OFF
+- home/garage/door/set	📥 Subscribe	Lệnh điều khiển Cửa Gara (Servo 2)	ON, OFF
+- home/garage/light/set	📥 Subscribe	Lệnh điều khiển Đèn Gara (LED)	ON, OFF
+- home/livingroom/temp_hum	📥 Subscribe	Nhận dữ liệu T/H (nếu có)	T25.5,H60.0
+- home/door/status	📤 Publish	Trạng thái hiện tại của Cửa Nhà	LOCK, UNLOCK
+- home/garage/door/status	📤 Publish	Trạng thái hiện tại của Cửa Gara	LOCK, UNLOCK
+- home/garage/light/status	📤 Publish	Trạng thái hiện tại của Đèn Gara	ON, OFF
+- home/garage/motion	📤 Publish	Trạng thái Cảm biến chuyển động	DETECT, NONE
 
 ## **🔑 Hướng dẫn Cài đặt**
 1. Cấu hình Arduino UNO (Module Điều khiển)
